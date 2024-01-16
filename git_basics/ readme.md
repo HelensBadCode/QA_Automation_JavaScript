@@ -1,1 +1,1 @@
-One does not simply understand GITпше 
+One does not simply understand GIT
