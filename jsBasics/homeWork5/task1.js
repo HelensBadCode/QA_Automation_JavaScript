@@ -1,22 +1,22 @@
 //function declaration
-function rectangleAreaDeclaration(width, height){
-    let result = width * height;
+function calculationAreaOfRectangle(width, height){
+    const result = width * height;
     return result;
 }
-console.log("The area of the rectangle :", rectangleAreaDeclaration(23, 16));
+console.log("The area of the rectangle :", calculationAreaOfRectangle(23, 16));
 //----------------------------------------------------------------------------------------------------------------------
 
 //function expression
-const rectangleAreaExpression = function (width, height) {
-    let result = width * height;
+const calculationAreaOfRectangle2 = function (width, height) {
+    const result = width * height;
     return result;
 }
-console.log("The area of the rectangle :",rectangleAreaExpression(26, 32));
+console.log("The area of the rectangle :",calculationAreaOfRectangle2(26, 32));
 //----------------------------------------------------------------------------------------------------------------------
 
 //arrow function expression
-const rectangleAreaArrow = (width, height) => {
-    let result = width * height;
+const calculationAreaOfRectangle3 = (width, height) => {
+    const result = width * height;
     return result;
 }
-console.log("The area of the rectangle :",rectangleAreaArrow(33, 12));
+console.log("The area of the rectangle :",calculationAreaOfRectangle3(33, 12));
