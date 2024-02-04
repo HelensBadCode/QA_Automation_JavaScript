@@ -1,9 +1,12 @@
 function divideNumbers (numerator,denominator){
     if (typeof numerator !== 'number' || typeof denominator !== 'number'){
         throw new Error("Error: both parameters must be number!")
-    } else if(denominator === 0) {
+    }
+
+    if(denominator === 0) {
         throw new Error("Error: denominator is 0!")
     }
+
     return numerator /denominator
 }
 //positive case
