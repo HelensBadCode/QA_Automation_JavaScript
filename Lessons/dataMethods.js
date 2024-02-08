@@ -28,3 +28,17 @@ const color = ["blue", "green", "red", "pink"];
 // console.log(sumNumbers);
 // const sumNumbers2 = numbers.reduce((acc,item )=> acc + item, 10);
 // console.log(sumNumbers2);
+
+// //reverse
+// const numbers5 = [1, 4, "olena", true];
+// console.log(numbers5.reverse());
+
+// //every
+// const users = ["Olena", "Viktor", "Andrii"];
+// const allNames = users.every((name) => name.length >3 );
+// console.log("All names ", allNames);
+//
+// //some
+// const hasOlena =users.some((name) => user.name === "Olena");
+// console.log(hasOlena);
+
