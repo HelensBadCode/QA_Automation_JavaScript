@@ -75,6 +75,7 @@ export default class Book {
 
     }
 
+    //old implementation
     static findOldestBook(books) {
         if (!Array.isArray(books) || books.length === 0) {
             console.error("Error: Invalid input or empty array.");
@@ -91,5 +92,21 @@ export default class Book {
 
         return oldestBook;
     }
+
+    //reduce
+    static findOldestBookByReduce(books) {
+        return books.reduce((oldest, current) => {
+            return current.yearOfPublication < oldest.yearOfPublication ? current : oldest;
+        }, books[0]);
+    }
+
+    //sort
+    static findOldestBookBySort(books) {
+        return books.sort((a, b) => a.yearOfPublication - b.yearOfPublication)[0];
+    }
+
+
+
+
 
 }

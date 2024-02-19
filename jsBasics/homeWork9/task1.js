@@ -58,15 +58,27 @@ const books = [
     new Book("To Kill a Mockingbird", "Harper Lee", 1960),
     new Book("1984", "George Orwell", 1949),
     new EBook("The Lord of the Rings", "J.R.R. Tolkien",1955, "EPUB"),
-    new EBook("Moby-Dick", "Herman Melville",1851, "PDF")
+    new EBook("Moby-Dick", "Herman Melville",1841, "PDF")
 ];
 
 const oldestBook = Book.findOldestBook(books);
 console.log("-------------------------------------------------");
-console.log("Oldest Book:");
+console.log("Oldest Book by loop:");
 oldestBook.printBookInfo();
 
+const oldestBookByReduce = Book.findOldestBookByReduce(books);
 console.log("-------------------------------------------------");
-const book4 = new Book("Harry Potter and the Philosopher's Stone", "J.K. Rowling",1997);
-const test = EBook.fromBookAndFileFormat(book4, "MBP");
-console.log(test);
+console.log("Oldest Book by reduce:");
+oldestBook.printBookInfo();
+
+const oldestBookBySort = Book.findOldestBookBySort(books);
+console.log("-------------------------------------------------");
+console.log("Oldest Book by sort:");
+oldestBook.printBookInfo();
+
+
+// console.log("-------------------------------------------------");
+// const book4 = new Book("Harry Potter and the Philosopher's Stone", "J.K. Rowling",1997);
+// const test = EBook.fromBookAndFileFormat(book4, "MBP");
+// console.log(test);
+
