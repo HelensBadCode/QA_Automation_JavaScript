@@ -14,7 +14,7 @@ book3.printBookInfo();
 // //positive tests
 // book1.title = "Test set new title for a book!";
 // console.log(`The new title :${book1.title}`);
-// book1.author = "Test set new author for a book!";g
+// book1.author = "Test set new author for a book!";
 // console.log(`The new author :${book1.author}`);
 // book1.yearOfPublication = 1999;
 // console.log(`The new year of publication :${book1.yearOfPublication}`);
