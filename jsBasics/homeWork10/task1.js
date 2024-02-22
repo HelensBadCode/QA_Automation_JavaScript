@@ -1,7 +1,7 @@
-function printTextWithDelay(text, ml_sec) {
+function printTextWithDelay(text, ms) {
     setTimeout(() => {
         console.log(text);
-    }, ml_sec);
+    }, ms);
 }
 
 printTextWithDelay("It works!", 3000);
