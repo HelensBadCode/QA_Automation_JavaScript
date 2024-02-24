@@ -6,8 +6,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "npm prittier . --write",
     "prepare": "husky",
-    "lint": "npx eslint --fix ."git
+    "lint": "npx eslint --fix ."
   },
   "author": "Olena Turcheniuk",
   "license": "ISC",
