@@ -1,7 +1,7 @@
 const person = {
-    name: "Olena",
-    age: 28,
-    city: "Kiev"
+  name: 'Olena',
+  age: 28,
+  city: 'Kiev',
 };
 //
 // //for (const key in person)

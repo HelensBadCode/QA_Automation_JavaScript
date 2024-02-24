@@ -6,7 +6,7 @@
 // console.log("Line 1");
 // setTimeout(()=>console.log("Line 2"), 0);//last
 // console.log("Line 3");
-//---------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------;
 // //callbacks - old implementation
 // function notifyCustomer(){
 //     console.log("Pizza is ready");
@@ -22,7 +22,7 @@
 // }
 //
 // cookPizza(notifyCustomer);
-//---------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------;
 // //promises
 // const promise =  new Promise((resolve, reject)=>{
 //     // console.log("text from promise!");//Promise { <pending> }
@@ -55,19 +55,19 @@
 // Promise.resolve("Hello").then().catch();
 // Promise.reject(new Error("Error")).then().catch((e)=> console.log(e.message));
 
-//----------------------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------;
 // All
-function promiseA (){
-    return Promise.resolve("A");
+function promiseA() {
+  return Promise.resolve('A');
 }
 
-function promiseB (){
-    return Promise.resolve("B");
+function promiseB() {
+  return Promise.resolve('B');
 }
 
-function promiseC (){
-    //return Promise.resolve("C");
-    return Promise.reject(new Error("Error C"));
+function promiseC() {
+  // return Promise.resolve("C");
+  return Promise.reject(new Error('Error C'));
 }
 
 // //Promise_all - повертає все, тільки якщо всі виконались успішно
@@ -112,21 +112,23 @@ function promiseC (){
 //     }).catch((e)=> e.message);
 
 const pErr = new Promise((resolve, reject) => {
-    reject("Always fails");
+  reject(new Error('Always fails'));
 });
 
 const pSlow = new Promise((resolve, reject) => {
-    setTimeout(resolve, 500, "Done eventually");
+  setTimeout(resolve, 500, 'Done eventually');
 });
 
 const pFast = new Promise((resolve, reject) => {
-    setTimeout(resolve, 100, "Done quick");
+  setTimeout(resolve, 100, 'Done quick');
 });
 
 Promise.any([pErr, pSlow, pFast]).then((value) => {
-    console.log(value);
+  console.log(value);
 });
 
-Promise.race([pErr, pSlow, pFast]).then((value) => {
+Promise.race([pErr, pSlow, pFast])
+  .then((value) => {
     console.log(value);
-}).catch((e)=>console.log(e));
+  })
+  .catch((e) => console.log(e));

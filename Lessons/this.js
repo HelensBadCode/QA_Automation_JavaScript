@@ -32,5 +32,4 @@
 // greetFunction("Privit");
 // person2.greet.call(person);
 
-const numbers =[1, 3, 5, 7];
-
+const numbers = [1, 3, 5, 7];

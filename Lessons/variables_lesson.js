@@ -16,14 +16,14 @@
 // lastName = 4958993;
 // console.log("My Lastname - "+ lastName);
 
-//naming
+// naming
 // const personalAge = 33;
 // const personal_age = 33;
 // const _personalAge = 55;
 // const $personalAge = 90;
 // const personal_age = 88;
 // const AGE = 4;
-//const age = 8;
+// const age = 8;
 // const cvv = 123;
 
 // const isMarries = true;
@@ -37,8 +37,7 @@
 // console.log("Test2 :",AGE2);
 // var AGE2 = 98;
 
-
-//numbers
+// numbers
 // let num1 = 1;
 // const num2 = 2;
 
@@ -62,7 +61,7 @@
 // console.log((negativeNum2));
 
 // //String
-//const text = "I am string";
+// const text = "I am string";
 // console.log(text[0]);
 // console.log(text[2]);
 // console.log(text);
@@ -77,7 +76,6 @@
 // console.log(text.replace("am", "I"));
 // console.log(text.replaceAll("a", "y"));
 // console.log(text.includes("string"));
-
 
 // const greeting = "Hello ";
 // let name = "Olena";
@@ -116,10 +114,7 @@
 
 console.log(3 > 6);
 console.log(3 < 6);
-console.log(3 >= 3);
-console.log(3 == "3");//soft
-console.log("hello" == "Hello");
-console.log(3 === "3");//hard
-console.log(false == 0);
-
-
+console.log(3 === '3'); // soft
+console.log('hello' === 'Hello');
+console.log(3 === '3'); // hard
+console.log(false === 0);

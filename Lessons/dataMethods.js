@@ -1,5 +1,5 @@
-const numbers = [5, 8, 90, 3 , 5, 88, 3];
-const color = ["blue", "green", "red", "pink"];
+const numbers = [5, 8, 90, 3, 5, 88, 3];
+const color = ['blue', 'green', 'red', 'pink'];
 
 // forEach
 // numbers.forEach((element) => {
@@ -41,4 +41,3 @@ const color = ["blue", "green", "red", "pink"];
 // //some
 // const hasOlena =users.some((name) => user.name === "Olena");
 // console.log(hasOlena);
-

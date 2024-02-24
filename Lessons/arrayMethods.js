@@ -9,7 +9,6 @@
 // console.log(numbers.indexOf(55));//ok [2]
 // console.log(numbers.indexOf(8));//miss element -1
 
-
 // //includes
 //
 // const colors = ["green", "red","black"];
@@ -40,7 +39,7 @@
 // console.log(unsShiftValue);
 
 // //slice
-const numbers4 =[11, 4, 55, 7, 95];
+const numbers4 = [11, 4, 55, 7, 95];
 // const newArraySlice  = numbers4.slice(1, 3);
 // const newArraySlice2  = numbers4.slice(1);
 // console.log(numbers4);
@@ -61,10 +60,8 @@ const numbers4 =[11, 4, 55, 7, 95];
 // // console.log(numbers4);
 // // console.log(newArraySplice3);
 
-
 // //concat
 // const arr1 = [5, 9];
 // const arr2 = [44, 9];
 // const concatArray= arr1.concat(arr2);
 // console.log(concatArray);//5, 9, 44, 9
-

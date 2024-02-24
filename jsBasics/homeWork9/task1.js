@@ -1,11 +1,9 @@
-import Book from "./Book.js";
-import EBook from "./EBook.js";
+import Book from './Book.js';
+import EBook from './EBook.js';
 
-const book1 = new Book("To Kill a Mockingbird", "Harper Lee", 1960);
-const book2 = new Book("Pride and Prejudice", "Jane Austen",1813);
-const book3 = new Book("The Catcher in the Rye", "J.D. Salinger",1951);
-
-
+const book1 = new Book('To Kill a Mockingbird', 'Harper Lee', 1960);
+const book2 = new Book('Pride and Prejudice', 'Jane Austen', 1813);
+const book3 = new Book('The Catcher in the Rye', 'J.D. Salinger', 1951);
 
 book1.printBookInfo();
 book2.printBookInfo();
@@ -32,9 +30,8 @@ book3.printBookInfo();
 // book1.yearOfPublication = NaN;
 // book1.yearOfPublication = 1222;
 
-
-const format1 = new EBook("The Lord of the Rings", "J.R.R. Tolkien",1955, "EPUB");
-const format2 = new EBook("Moby-Dick", "Herman Melville",1851, "PDF");
+const format1 = new EBook('The Lord of the Rings', 'J.R.R. Tolkien', 1955, 'EPUB');
+const format2 = new EBook('Moby-Dick', 'Herman Melville', 1851, 'PDF');
 
 format1.printBookInfo();
 format2.printBookInfo();
@@ -52,33 +49,29 @@ format2.printBookInfo();
 // format1.fileFormat = true;
 // format1.fileFormat = "AT";
 
-
-
 const books = [
-    new Book("To Kill a Mockingbird", "Harper Lee", 1960),
-    new Book("1984", "George Orwell", 1949),
-    new EBook("The Lord of the Rings", "J.R.R. Tolkien",1955, "EPUB"),
-    new EBook("Moby-Dick", "Herman Melville",1841, "PDF")
+  new Book('To Kill a Mockingbird', 'Harper Lee', 1960),
+  new Book('1984', 'George Orwell', 1949),
+  new EBook('The Lord of the Rings', 'J.R.R. Tolkien', 1955, 'EPUB'),
+  new EBook('Moby-Dick', 'Herman Melville', 1841, 'PDF'),
 ];
 
 const oldestBook = Book.findOldestBook(books);
-console.log("-------------------------------------------------");
-console.log("Oldest Book by loop:");
+console.log('-------------------------------------------------');
+console.log('Oldest Book by loop:');
 oldestBook.printBookInfo();
 
 const oldestBookByReduce = Book.findOldestBookByReduce(books);
-console.log("-------------------------------------------------");
-console.log("Oldest Book by reduce:");
+console.log('-------------------------------------------------');
+console.log('Oldest Book by reduce:');
 oldestBook.printBookInfo();
 
 const oldestBookBySort = Book.findOldestBookBySort(books);
-console.log("-------------------------------------------------");
-console.log("Oldest Book by sort:");
+console.log('-------------------------------------------------');
+console.log('Oldest Book by sort:');
 oldestBook.printBookInfo();
-
 
 // console.log("-------------------------------------------------");
 // const book4 = new Book("Harry Potter and the Philosopher's Stone", "J.K. Rowling",1997);
 // const test = EBook.fromBookAndFileFormat(book4, "MBP");
 // console.log(test);
-

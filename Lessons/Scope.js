@@ -30,14 +30,13 @@
 // showMessage3();
 // console.log("Outside ", userName1);
 
-
-function withdrawal(amount, balance){
-    if(amount === 0){
-        console.log("Веедіть суму більше 0!")
-    } else if(amount > balance){
-        console.log("Недостатньо коштів на рахунку!")
-    } else {
-        console.log("Операція зняття коштів успішна!")
-    }
+function withdrawal(amount, balance) {
+  if (amount === 0) {
+    console.log('Веедіть суму більше 0!');
+  } else if (amount > balance) {
+    console.log('Недостатньо коштів на рахунку!');
+  } else {
+    console.log('Операція зняття коштів успішна!');
+  }
 }
 withdrawal(100, 70);

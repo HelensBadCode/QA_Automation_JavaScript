@@ -1,26 +1,26 @@
 class Car {
-    constructor(make, model) {
-        this.make = make;
-        this.model = model;
+  constructor(make, model) {
+    this.make = make;
+    this.model = model;
 
-        this.isPowerOn = false
-        this.isCarDriving = false
-        this.fuelVolume = 0
+    this.isPowerOn = false;
+    this.isCarDriving = false;
+    this.fuelVolume = 0;
+  }
+
+  drive() {
+    if (this.fuelVolume <= 0) {
+      return;
     }
 
-    drive() {
-        if(this.fuelVolume <= 0){
-            return
-        }
+    this.isPowerOn = true;
+    this.isCarDriving = true;
 
-        this.isPowerOn = true
-        this.isCarDriving = true
-
-        console.log(`${this.make} ${this.model} is driving.`);
-    }
+    console.log(`${this.make} ${this.model} is driving.`);
+  }
 }
 
-const car = new Car("Toyota", "Camry");
+const car = new Car('Toyota', 'Camry');
 car.drive();
-car.fuelVolume =50;
+car.fuelVolume = 50;
 car.drive();

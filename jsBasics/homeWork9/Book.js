@@ -1,112 +1,101 @@
 export default class Book {
-    constructor(title, author, yearOfPublication) {
-        this._title = title
-        this._author = author
-        this._yearOfPublication = yearOfPublication
+  constructor(title, author, yearOfPublication) {
+    this._title = title;
+    this._author = author;
+    this._year = yearOfPublication;
+  }
+
+  get title() {
+    return this._title;
+  }
+
+  set title(value) {
+    if (typeof value !== 'string') {
+      console.error('Error: Title should be type of string');
+      return;
     }
 
-    get title(){
-        return this._title
+    if (value.length < 1) {
+      console.error('Error: Incorrect title value! Title length should be at least 1 symbol.');
+      return;
     }
 
-    set title(value){
-        if(typeof value !== "string"){
-            console.error("Error: Title should be type of string")
-            return
-        }
+    this._title = value;
+  }
 
-        if(value.length < 1){
-            console.error("Error: Incorrect title value! Title length should be at least 1 symbol.")
-            return
+  get author() {
+    return this._author;
+  }
 
-        }
-
-        this._title = value
+  set author(value) {
+    if (typeof value !== 'string') {
+      console.error('Error: Name of author should be type of string');
+      return;
     }
 
-    get author(){
-        return this._author
+    if (value.length < 2) {
+      console.error('Error:Incorrect value! The name of author length should be at least 2 symbol.');
+      return;
     }
 
-    set author(value){
-        if(typeof value !== "string"){
-            console.error("Error: Name of author should be type of string")
-            return
-        }
+    this._author = value;
+  }
 
-        if(value.length < 2){
-            console.error("Error:Incorrect value! The name of author length should be at least 2 symbol.")
-            return
-        }
+  get yearOfPublication() {
+    return this._year;
+  }
 
-        this._author = value
+  set yearOfPublication(value) {
+    if (typeof value !== 'number') {
+      console.error('Error: Year of publication should be type of number.');
+      return;
     }
 
-    get yearOfPublication(){
-        return this._yearOfPublication
+    if (value.length === 0) {
+      console.error('Error: Empty year of publication value!');
+      return;
     }
 
-    set yearOfPublication(value){
-        if(typeof value !== "number"){
-            console.error("Error: Year of publication should be type of number.")
-            return
-        }
-
-        if(value.length === 0){
-            console.error("Error: Empty year of publication value!")
-            return
-
-        }
-
-        if (value < 1800 || value > 2024) {
-            console.error("Error: Incorrect year of publication.")
-            return
-        }
-
-        this._yearOfPublication = value
+    if (value < 1800 || value > 2024) {
+      console.error('Error: Incorrect year of publication.');
+      return;
     }
 
-    printBookInfo(){
-        console.log("-------------------------------------------------");
-        console.log("Title the book : ", this._title);
-        console.log("Author : ", this._author);
-        console.log("Year of publication :", this._yearOfPublication);
+    this._year = value;
+  }
 
+  printBookInfo() {
+    console.log('-------------------------------------------------');
+    console.log('Title the book : ', this._title);
+    console.log('Author : ', this._author);
+    console.log('Year of publication :', this._yearOfPublication);
+  }
 
+  // old implementation
+  static findOldestBook(books) {
+    if (!Array.isArray(books) || books.length === 0) {
+      console.error('Error: Invalid input or empty array.');
+      return;
     }
 
-    //old implementation
-    static findOldestBook(books) {
-        if (!Array.isArray(books) || books.length === 0) {
-            console.error("Error: Invalid input or empty array.");
-            return
-        }
+    let oldestBook = books[0];
 
-        let oldestBook = books[0];
-
-        for (let i = 1; i < books.length; i++) {
-            if (books[i].yearOfPublication < oldestBook.yearOfPublication) {
-                oldestBook = books[i];
-            }
-        }
-
-        return oldestBook;
+    for (let i = 1; i < books.length; i++) {
+      if (books[i].year < oldestBook.year) {
+        oldestBook = books[i];
+      }
     }
 
-    //reduce
-    static findOldestBookByReduce(books) {
-        return books.reduce((oldest, current) => {
-            return current.yearOfPublication < oldest.yearOfPublication ? current : oldest;
-        }, books[0]);
-    }
+    return oldestBook;
+  }
 
-    //sort
-    static findOldestBookBySort(books) {
-        return books.sort((a, b) => a.yearOfPublication - b.yearOfPublication)[0];
-    }
+  // reduce
+  static findOldestBookByReduce(books) {
+    return books.reduce((oldest, cur) => (cur.year < oldest.year ? cur : oldest), books[0]);
+  }
 
-
-
-
-
+  // sort
+  static findOldestBookBySort(books) {
+    return books.sort((a, b) => a.year - b.year)[0];
+  }
 }

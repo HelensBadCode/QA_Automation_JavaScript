@@ -12,8 +12,6 @@
 // const doubled = double(result);
 // console.log(doubled);
 
-
-
 // //functional approach
 // const calculationSumFunction = (a, b) => a + b;
 // const result2 = calculationSumFunction(6, 9);

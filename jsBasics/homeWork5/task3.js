@@ -1,14 +1,14 @@
-function checkOrder(available, ordered){
-    let message;
-    if(ordered === 0){
-        message = "Your order is empty!";
-    } else if (available < ordered){
-        message = "Your order is too large, we don’t have enough goods.";
-    } else {
-        message = "Your order is accepted.";
-    }
+function checkOrder(available, ordered) {
+  let message;
+  if (ordered === 0) {
+    message = 'Your order is empty!';
+  } else if (available < ordered) {
+    message = 'Your order is too large, we don’t have enough goods.';
+  } else {
+    message = 'Your order is accepted.';
+  }
 
-    return message;
+  return message;
 }
 
 let result = checkOrder(60, 75);

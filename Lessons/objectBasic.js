@@ -63,13 +63,12 @@
 // console.log(user3[testVar]);
 // console.log(user3["Average grade"]);
 
-
-//optional
+// optional
 const user4 = {
-    name: "Olena",
-    address: null,
-    zipCode: 87987
-}
+  name: 'Olena',
+  address: null,
+  zipCode: 87987,
+};
 // const zip = user4.address?.zipCode;
 // console.log(zip);
 //

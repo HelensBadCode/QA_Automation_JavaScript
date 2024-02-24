@@ -42,7 +42,6 @@
 // console.log(dog2);
 // console.log(dog2.hasOwnProperty("name"));
 
-
 // //methods
 // class Shape {
 //     constructor(color) {
@@ -75,44 +74,37 @@
 
 // коли можна не прописувати конструктор
 class Animal {
-    constructor(name, sound) {
-        this.name = name;
-        this.sound = sound;
-    }
+  constructor(name, sound) {
+    this.name = name;
+    this.sound = sound;
+  }
 
-    speak() {
-        console.log(`${this.name} says ${this.sound}`);
-    }
+  speak() {
+    console.log(`${this.name} says ${this.sound}`);
+  }
 }
 
-class MyCat extends Animal {}
-
-const myCat = new MyCat("Tom", "Toyota");
-myCat.speak();
-
-
-class Cat extends Animal {
-    constructor(name) {
-        super(name, "Meow");
-        this.color = "black"
-    }
-}
-
-const cat = new Cat("Tom")
-cat.speak()
-
-
-class WildCat extends Cat {
-    constructor(name) {
-        super(name);
-        // this.sound = "Hrrrrr"
-    }
-
-    speak() {
-        console.log(`${this.name} says Zrada`);
-    }
-}
-
-const panther = new WildCat("Musya")
-panther.speak()
-
+// class MyCat extends Animal {}
+//
+// const myCat = new MyCat('Tom', 'Toyota');
+// myCat.speak();
+//
+// class Cat extends Animal {
+//   constructor(name) {
+//     super(name, 'Meow');
+//     this.color = 'black';
+//   }
+// }
+//
+// const cat = new Cat('Tom');
+// cat.speak();
+//
+// class WildCat extends Cat {
+//
+//   speak() {
+//     console.log(`${this.name} says Zrada`);
+//   }
+// }
+//
+// const panther = new WildCat('Musya');
+// panther.speak();

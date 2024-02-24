@@ -19,7 +19,7 @@
 //
 // console.log(matrix[1][2]);
 
-const fruits3=["apple", "lemon","strawberry", "pineapple", 1111, true ];
+const fruits3 = ['apple', 'lemon', 'strawberry', 'pineapple', 1111, true];
 // // for (let i = 0; i < fruits3.length ; i++) {
 // //     const item =fruits3[i]
 // //     console.log(`Index ${i},value ${item}`)
@@ -53,7 +53,5 @@ const fruits3=["apple", "lemon","strawberry", "pineapple", 1111, true ];
 // }
 // console.log("Second case", sum);
 
-
 // const sum2 = numbers.reduce((acc, num)=> acc+ num)
 // console.log("Last case ", sum2);
-

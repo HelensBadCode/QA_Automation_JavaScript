@@ -1,4 +1,4 @@
-//ifElse
+// ifElse
 // const isMarried = false;
 // if(isMarried){
 //     console.log("Person is married!");
@@ -21,7 +21,7 @@
 // console.log("User type :", accessType);
 
 // const userName = "Svitlana";
-//if(if)
+// if(if)
 // if(userAge>=18){
 //     console.log("User is adult")
 //     if(userName.length){
@@ -80,7 +80,7 @@
 // }
 
 // //LOOPS
-//FOR
+// FOR
 // for(let i = 0; i <= 10; i++){
 //     console.log("My name is ....");
 //     console.log(`Index ${i}`);
@@ -135,9 +135,9 @@
 //     a++
 // } while (a <= 10)
 
-for (let i = 0; i < 10; i++){
-    for (let j = 0;j < 10; j++){
-        console.log(`Index J ${j}`)
-    }
-    console.log("Index I", i)
+for (let i = 0; i < 10; i++) {
+  for (let j = 0; j < 10; j++) {
+    console.log(`Index J ${j}`);
+  }
+  console.log('Index I', i);
 }

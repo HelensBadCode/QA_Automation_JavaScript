@@ -10,7 +10,6 @@
 //  const age = 28;
 //  const temperature = 37.5;
 
-
 // console.log(Number.MAX_SAFE_INTEGER + 1);
 // console.log(Number.MAX_SAFE_INTEGER + 2);
 // console.log(Number.MAX_SAFE_INTEGER + 3);
@@ -19,26 +18,20 @@
 // const num = 1n;
 // console.log(num+1);
 
-
 // //boolean
 // const isMarried = true;
 // const isGoodWeather = false;
 // const hasMoney = true;
 
-//Symbol() не використовується, для примітивних значень
+// Symbol() не використовується, для примітивних значень
 
-//Undefined
+// Undefined
 const name = undefined;
 let age;
-console.log("name ", name);
-console.log("age ",age);
+console.log('name ', name);
+console.log('age ', age);
 age = 33;
 age = 45;
 
-
-//NULL
+// NULL
 const firstname = null;
-
-
-
-

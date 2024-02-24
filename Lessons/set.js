@@ -5,4 +5,3 @@
 // console.log(typeof setArray);
 // const arrayNew = [...setArray];//change to array
 // console.log(arrayNew);
-

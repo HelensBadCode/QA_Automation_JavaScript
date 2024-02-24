@@ -5,10 +5,10 @@
 // }
 // countToZero(5);
 
-function countToZero2(startValue){
-    console.log(startValue)
-    if(startValue > 0) {
-        countToZero2(startValue - 1)
-    }
+function countToZero2(startValue) {
+  console.log(startValue);
+  if (startValue > 0) {
+    countToZero2(startValue - 1);
+  }
 }
 countToZero2(5);
